@@ -1,0 +1,145 @@
+.container {
+    
+    display: flex;
+    flex-direction: row;
+    
+    overflow-x: scroll;
+    position: relative;
+    max-width: 90vw;
+    
+}
+
+
+
+.largeContainer {
+    
+    position: relative;
+    
+
+}
+body {
+    background-image: linear-gradient(rgba(131, 88, 248, 0.5), rgba(30, 0, 128, 0.5)), url(../images/output.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+   
+.slide {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    color: white;
+    background-color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 100%;
+}
+
+.slide:hover {
+    opacity: 100%;
+}
+ .prev {
+    position: absolute;
+    left: 100px;
+    opacity: 0.3;
+    top: 100%;
+    transform: translateY(-70%);
+}
+
+.next {
+   position: relative;
+    right: -200px;
+    opacity: 0.3;
+    top: 120%;
+    transform: translateY(30%);
+} 
+
+.sidebar{
+ display: flex;
+    float: right;
+    width: 250px;
+    margin-right: 100px;
+    margin-top: 50px;
+    color: rgb(198, 195, 195);
+    position: absolute;
+    right: 0px;
+}
+input {
+    float: right;
+}
+.card-img-top {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+}
+.gamecard {
+    margin:20px;
+    display: flex;
+    z-index: -1;
+    text-decoration: none;
+    
+    
+}
+a {
+    text-decoration: none;
+}
+ h5 {
+   
+  
+    color: white;
+}
+
+h1 {
+    padding-top: 50px;
+    margin-left: 100px;
+    
+    color: white;
+}
+
+
+.card-body {
+    background:linear-gradient(rgba(131, 88, 248), rgba(30, 0, 128));
+    /* width: 300px; */
+}
+
+.card-title {
+    color:white
+}
+
+.sidebar h2 {
+    background-color: rgb(77, 0, 128, 0.3);
+}
+
+.giantContainer {
+   /* position: absolute; */
+   display: block;
+   position: relative;
+   padding-top: 100px;
+   
+   
+}
+
+.buttonContainer {
+    display: flex; /* Added */
+    justify-content: space-between; /* Added */
+    align-items: center; /* Added */
+    width: 1500px;
+    overflow: hidden;
+  
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 1499px) {
+    .next,
+    .prev {
+        display: none;
+    }
+}
